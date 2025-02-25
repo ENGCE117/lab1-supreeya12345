@@ -6,16 +6,18 @@ void PrintMatrix(int **value, int row, int col);
 
 int main() {
     int *data, m = 3, n = 3 ;
+    printf("Enter number of rows and columns: ");
+    scanf("%d %d", &m, &n);
     data = new int[ m * n ] ;
-   
     GetMatrix( &data, &m, &n ) ;
     PrintMatrix( &data, m, n ) ;
+    
     
     return 0 ;
 }//end function
 
 void GetMatrix(int **value, int *row, int *col) {
-    printf("Enter matrix values:\n");
+    printf("Enter matrix values:\n ");
     for (int i = 0; i < (*row) * (*col); i++) {
         scanf("%d", (*value + i));
     }
@@ -31,4 +33,5 @@ void PrintMatrix(int **value, int row, int col) {
     }
     
 }
+
 
