@@ -7,8 +7,10 @@ void PrintMatrix(int **value, int row, int col);
 int main() {
     int *data, m = 3, n = 3 ;
     data = new int[ m * n ] ;
+   
     GetMatrix( &data, &m, &n ) ;
     PrintMatrix( &data, m, n ) ;
+    
     return 0 ;
 }//end function
 
@@ -27,5 +29,6 @@ void PrintMatrix(int **value, int row, int col) {
         }
         printf("\n");
     }
+    
 }
 
